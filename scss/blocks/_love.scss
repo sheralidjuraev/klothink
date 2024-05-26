@@ -1,0 +1,126 @@
+.love__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 150px;
+}
+
+.love__head-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.love__head-title{
+    text-transform: uppercase;
+    @include font-style("Mon", 600, 38px, 52px, #1A1A1A);
+}
+
+.love__head-subtitle{
+    max-width: 975px;
+    @include font-style("Mon", 400, 16px, 24px, #656567);
+}
+
+.love__head-btn{
+    padding: 14px 36px;
+    background: #FFD400;
+    border-radius: 32px;
+    text-decoration: none;
+    @include font-style("Mon", 600, 14px, 21px, #262626);
+}
+
+.love__card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    background: #F7F7F8;
+    border: 1px solid #F1F1F3;
+    border-radius: 12px;
+    padding: 24px 24px;
+    margin-top: 60px;
+
+}
+
+.love__card-title-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.love__card-title{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: flex-start;
+
+        strong{
+            @include font-style("Mon", 500, 16px, 24px, #262626);
+        }
+}
+
+.love__card-title-bigwrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+.love__card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #ffffff;
+    border: 1px solid #F1F1F3;
+    border-radius: 12px;
+    padding: 40px 40px;
+
+        small{
+            @include font-style("Mon", 400, 16px, 24px, #4C4C4D);
+
+        }
+}
+
+@media screen and (max-width: 1280px){
+    .love__head{
+        padding-left: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1080px){
+    .love__card{
+        padding: 30px 30px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1023px){
+    .love__card-wrapper{
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .love__card-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .love__head{
+        margin-top: 125px;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    .love__card-title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+}
+

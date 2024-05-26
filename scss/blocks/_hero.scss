@@ -1,0 +1,146 @@
+.hero__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 80px;
+}
+
+.hero__text{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+}
+
+.hero__title{
+    text-transform: uppercase;
+    @include font-style("Mon", 600, 38px, 52px, #1A1A1A);
+}
+
+.hero__subtitle{
+    @include font-style("Mon", 400, 16px, 24px, #656567);
+    margin-top: -40px;
+}
+
+.hero__btn-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -20px;
+}
+
+.hero__btn-left{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 36px;
+    background: #FFD400;
+    border-radius: 32px;
+    max-width: 148px;
+        a{
+            text-decoration: none;
+            @include font-style("Mon", 600, 14px, 21px, #262626);
+        }
+}
+
+.hero__btn-right{
+    padding: 14px 36px;
+    border: 1px solid #F1F1F3;
+    border-radius: 32px;
+    text-decoration: none;
+    @include font-style("Mon", 600, 14px, 21px, #262626);
+
+}
+
+.hero__card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    background: #F7F7F8;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 0px 6px #FAFAFA;
+    padding: 16px 16px;
+
+}
+
+.hero__card{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: #ffffff;
+    border: 1px solid #F1F1F3;
+    border-radius: 12px;
+    padding: 24px 24px;
+
+        strong{
+            @include font-style("Mon", 600, 26px, 35px, #1A1A1A);
+        }
+
+        small{
+            @include font-style("Mon", 400, 16px, 24px, #656567);
+
+        }
+    
+}
+
+@media screen and (max-width: 1180px){
+    .hero__wrapper{
+        padding-left: 15px;
+    }
+
+    .hero__card{
+        padding: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .hero__card-wrapper{
+        padding: 14px 14px;
+        gap: 14px;
+    }
+}
+
+@media screen and (max-width: 1140px){
+    .hero__card-wrapper{
+        padding: 12px 12px;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 1115px){
+    .hero__card-wrapper{
+        padding: 10px 10px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1060px){
+    .hero__card-wrapper{
+        margin-top: -20px;
+    }
+
+    .hero__wrapper{
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 995px){
+    .hero__wrapper{
+        grid-template-columns: 1fr;
+        padding-right: 10px;
+    }
+
+    .hero__image{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 515px){
+    .hero__title{
+        font-size: 28px;
+    }
+
+    .hero__subtitle{
+        font-size: 16px;
+    }
+}

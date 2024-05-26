@@ -1,0 +1,21 @@
+// font-style
+
+@mixin font-style($ff, $fw, $fs, $lh, $fc){
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $fc;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+:root {
+    --white-color: #fff;
+    --cecondary-color: #656567;
+    --main-color: #1A1A1A;
+    --main-font: "Manrope Medium";
+}
